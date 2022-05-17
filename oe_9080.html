@@ -1,0 +1,148 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+   <TITLE>-9080</TITLE>
+</HEAD>
+
+<BODY>
+
+<B><I><FONT FACE="Arial">
+   <P>-9080</P>
+</B></I></FONT><FONT SIZE=2>
+<HR>
+
+<TABLE CELLSPACING=0 BORDER-STYLE="NONE" CELLPADDING=0 WIDTH=300>
+<TR>
+   <TD WIDTH="33%" VALIGN=TOP>
+   <FONT SIZE=2><P><A HREF=oe_edit_summary.html#> Edit Summary</A><BR></P></FONT></TD>
+   <TD WIDTH="33%" VALIGN=TOP>
+   <FONT SIZE=2><P><A HREF="oe_9060.html">Previous edit</A><BR></P></FONT></TD>
+   <TD WIDTH="33%" VALIGN=TOP>
+   <FONT SIZE=2><P><A HREF="oe_9090.html">Next edit</A><BR></P></FONT></TD>
+</TR>
+</TABLE>
+<BR>
+
+<TABLE CELLSPACING=0 BORDER-STYLE="NONE" CELLPADDING=2 WIDTH=700>
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+   <B><I>Property</B></I></TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+   <B><I>Specification</B></I></TD>
+</TR>
+
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+      <B><FONT SIZE=2>Data System</B></FONT>
+   </TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+      <FONT SIZE=2>OASIS</FONT>
+   </TD>
+</TR>
+
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+      <B><FONT SIZE=2>Data Specs</B></FONT>
+   </TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+      <FONT SIZE=2>V3.00.0 DRAFT</FONT>
+   </TD>
+</TR>
+
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+      <B><FONT SIZE=2>Edit Type</B></FONT>
+   </TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+      <FONT SIZE=2>Information</FONT>
+   </TD>
+</TR>
+
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+      <B><FONT SIZE=2>Severity</B></FONT>
+   </TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+      <FONT SIZE=2>None</FONT>
+   </TD>
+</TR>
+
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+      <B><FONT SIZE=2>Edit Text</B></FONT>
+   </TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+      <FONT SIZE=2>COMPLETION OF FOLLOW-UP ASSESSMENTS<BR>The allowable completion dates for the first and any subsequent follow-up assessments will be calculated relative to the start of care date. Follow-up assessments must be completed every 60 days that a patient is under care. Each time a follow-up assessment is due, it should be completed on or after the 56th day and on or before the 60th day of the period.<BR><BR>More formally, the rules can be stated as follows:<BR><BR>-Let j be the follow-up period number (i.e., 1=first follow-up period, 2=second follow-up period, etc.).<BR><BR>-Let SOC be the start of care date (<A HREF="oi_m0030_start_care_dt.html">M0030_START_CARE_DT</A>).<BR><BR>-Let FCD be the completion date (<A HREF="oi_m0090_info_completed_dt.html">M0090_INFO_COMPLETED_DT</A>) of a follow-up assessment.<BR><BR>Given these symbols, the rule for completion of follow-up assessments is as follows:<BR><BR>SOC + (60*j) - 5 <= FCD <= SOC + (60*j) - 1<BR><BR>Where j=1, 2, 3, etc.<BR><BR>If a patient is under care by a home health agency during one of the follow-up windows defined above, a follow-up assessment must be submitted. An exception to this rule can occur if a patient resumes care following an inpatient stay and if the resumption of care date (<A HREF="oi_m0032_roc_dt.html">M0032_ROC_DT</A>) falls within one of the follow-up windows. In this case, the home health agency should submit an RFA 03 resumption of care (after inpatient stay) (<A HREF="oi_m0100_assmt_reason.html">M0100_ASSMT_REASON</A>=[03]) instead of the normal follow-up assessment.  Submission of such a resumption of care assessment fulfills the requirement for the follow-up assessment because it includes all of the data items contained in the normal follow-up assessment.</FONT>
+   </TD>
+</TR>
+
+<TR>
+   <TD WIDTH="15%" VALIGN=TOP>
+      <B><FONT SIZE=2>Version Notes</B></FONT>
+   </TD>
+   <TD WIDTH="75%" VALIGN=TOP>
+      <FONT SIZE=2></FONT>
+   </TD>
+</TR>
+
+</TABLE>
+<FONT SIZE=2></FONT>
+<BR>
+
+<TABLE CELLSPACING=0 BORDER-STYLE="NONE" CELLPADDING=0 WIDTH=700>
+<TR>
+   <TD COLSPAN=2 VALIGN=TOP>
+   <B><I>Item List</B></I></TD>
+</TR>
+<TR>
+<TR>
+   <TD WIDTH="10%" VALIGN=TOP>
+   <FONT SIZE=2><B>Item ID</B></FONT></TD>
+   <TD WIDTH="50%" VALIGN=TOP>
+   <FONT SIZE=2><B>Description</B></FONT></TD>
+<TR>
+   <TD WIDTH="10%" VALIGN=TOP>
+   <FONT SIZE=2><A HREF="oi_m0030_start_care_dt.html">M0030_START_CARE_DT</A></FONT></TD>
+   <TD WIDTH="50%" VALIGN=TOP>
+   <FONT SIZE=2>Start of care date</FONT></TD>
+</TR>
+<TR>
+   <TD WIDTH="10%" VALIGN=TOP>
+   <FONT SIZE=2><A HREF="oi_m0032_roc_dt.html">M0032_ROC_DT</A></FONT></TD>
+   <TD WIDTH="50%" VALIGN=TOP>
+   <FONT SIZE=2>Resumption of care date</FONT></TD>
+</TR>
+<TR>
+   <TD WIDTH="10%" VALIGN=TOP>
+   <FONT SIZE=2><A HREF="oi_m0090_info_completed_dt.html">M0090_INFO_COMPLETED_DT</A></FONT></TD>
+   <TD WIDTH="50%" VALIGN=TOP>
+   <FONT SIZE=2>Date assessment completed</FONT></TD>
+</TR>
+<TR>
+   <TD WIDTH="10%" VALIGN=TOP>
+   <FONT SIZE=2><A HREF="oi_m0100_assmt_reason.html">M0100_ASSMT_REASON</A></FONT></TD>
+   <TD WIDTH="50%" VALIGN=TOP>
+   <FONT SIZE=2>Reason for assessment</FONT></TD>
+</TR>
+</TABLE>
+<BR>
+
+<TABLE CELLSPACING=0 BORDER-STYLE="NONE" CELLPADDING=0 WIDTH=300>
+<TR>
+   <TD WIDTH="33%" VALIGN=TOP>
+   <FONT SIZE=2><P><A HREF=oe_edit_summary.html#> Edit Summary</A><BR></P></FONT></TD>
+   <TD WIDTH="33%" VALIGN=TOP>
+   <FONT SIZE=2><P><A HREF="oe_9060.html">Previous edit</A><BR></P></FONT></TD>
+   <TD WIDTH="33%" VALIGN=TOP>
+   <FONT SIZE=2><P><A HREF="oe_9090.html">Next edit</A><BR></P></FONT></TD>
+</TR>
+</TABLE>
+<BR>
+
+<HR>
+<P><FONT SIZE=1>
+NOTICE: These materials are in the public domain and cannot be copyrighted.<BR>
+Generated: 05/18/2020 01:39:07 PM
+</P>
+</BODY>
+</HTML>
